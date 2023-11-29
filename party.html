@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Party Planner</title>
+    <script defer src="party.js"></script>
+    <style>
+        h1, h2 {
+            text-align: center;
+        }
+        form { 
+            margin-left: 20%;
+        }
+
+        input[type=button] {
+            background-color: greenyellow;
+            margin-left: 45%;
+        }
+        table {
+            table-layout: auto;
+            width: 80%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Party Planning Organizer</h1>
+    <br>
+    <form name="addParty" id="partyForm">
+        <label>Name</label>
+        <input type="text" name="name" id="name_input">
+        <label>Date</label>
+        <input type="text" name="date" id="date_input">
+        <label>Location</label>
+        <input type="text" name="location" id="location_input">
+        <label>Description</label>
+        <input type="text" name="description" id="description_input">
+    </form>
+    <p><input type="button" value="Add New Party" onclick="showInput();" /><br><br></p>
+    <label><h2>All Scheduled Parties</h2></label>
+    <table id="allParties">
+        <tr>
+            <th>Name</th>
+            <th>Date</th>
+            <th>Location</th>
+            <th>Description</th>
+        </tr>
+    </table>
+    <section id="parties">
+        <span id="f1"></span>
+        <span id="f2"></span>
+        <span id="f3"></span>
+        <span id="f4"></span>
+    </section>
+</body>
+</html>
